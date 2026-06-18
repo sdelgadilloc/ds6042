@@ -12,7 +12,7 @@ for line in open("sft.log"):
 plt.figure(figsize=(7, 4))
 plt.plot(steps, losses, lw=1)
 plt.xlabel("step"); plt.ylabel("loss")
-plt.title(f"base_train · depth 6 · {len(steps)} steps")
+plt.title(f"SFT · depth 6 · {len(steps)} steps")
 plt.grid(alpha=0.3); plt.tight_layout()
 plt.savefig("sft_loss.png", dpi=120)
 print(f"wrote sft_loss.png ({len(steps)} points)")
